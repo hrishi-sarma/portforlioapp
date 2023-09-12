@@ -1,4 +1,3 @@
-# portfolio.py
 from kivy.app import *
 from kivy.uix.gridlayout import *
 from kivy.uix.label import *
@@ -25,9 +24,9 @@ class PortfolioApp(App):
         for skill in skills:
             skill_label = Label(text=skill, font_size=16)
             layout.add_widget(skill_label)
-        custom_paragraph = "New to app development so this one might be a little bland."
-        custom_paragraph_label = Label(text=custom_paragraph, font_size=18, halign="left")
-        layout.add_widget(custom_paragraph_label)
+        para = "New to app development so this one might be a little bland."
+        para_label = Label(text=para, font_size=18, halign="left")
+        layout.add_widget(para_label)
 
         return layout
 
